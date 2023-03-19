@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>MySQL查表信息</title>
+    <link href="/2023/03/19/MySQL%E6%9F%A5%E8%A1%A8%E4%BF%A1%E6%81%AF/"/>
+    <url>/2023/03/19/MySQL%E6%9F%A5%E8%A1%A8%E4%BF%A1%E6%81%AF/</url>
+    
+    <content type="html"><![CDATA[<p>查询表信息：</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">mysql&gt; use infomation_schema; <br><br>mysql&gt; <span class="hljs-keyword">select</span> <span class="hljs-built_in">TABLE_NAME</span>, TABLE_ROWS, (DATA_LENGTH/<span class="hljs-number">1024</span>)/<span class="hljs-number">1024</span> <span class="hljs-keyword">as</span> MB <span class="hljs-keyword">from</span> <span class="hljs-keyword">TABLES</span> <span class="hljs-keyword">where</span> <span class="hljs-built_in">TABLE_NAME</span> = <span class="hljs-string">&#x27;xxx&#x27;</span> <span class="hljs-keyword">limit</span> <span class="hljs-number">50</span>\G;<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technique</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>mysql</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>文字精选-20230319</title>
     <link href="/2023/03/19/%E6%96%87%E5%AD%97%E7%B2%BE%E9%80%89-20230319/"/>
     <url>/2023/03/19/%E6%96%87%E5%AD%97%E7%B2%BE%E9%80%89-20230319/</url>
